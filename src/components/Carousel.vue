@@ -3,7 +3,6 @@
     <v-row v-resize="onResize" align-content="stretch">
       <v-col class="pa-0">
         <v-carousel
-          style="background: black !important"
           width="100%"
           continuoues
           cycle
@@ -12,7 +11,7 @@
           <v-carousel-item
           v-for="(item, i) in items"
           :key="i">
-           <v-img contain :height="item.height" :src="item.src" />
+           <v-img contain :src="item.src" />
           </v-carousel-item>
         </v-carousel>
       </v-col>
@@ -28,20 +27,16 @@ export default {
     carouselHeight: 0,
     items: [
       {
-        src: '/img/mojavesunset.png',
-        height: '120%'
+        src: '/img/outfit3.jpg'
       },
       {
-        src: '/img/collection.jpg',
-        height: '150%'
+        src: '/img/outfit6.jpg'
       },
       {
-        src: '/img/model5.jpg',
-        height: '155%'
+        src: '/img/outfit4.jpg'
       },
       {
-        src: '/img/outfit1.jpg',
-        height: '155%'
+        src: '/img/outfit1.jpg'
       },
     ]
   }),
