@@ -11,7 +11,7 @@
           <v-carousel-item
           v-for="(item, i) in items"
           :key="i">
-           <v-img contain :src="item.src" />
+           <v-img :min-height="carouselHeight" :src="item.src" class="shift" />
           </v-carousel-item>
         </v-carousel>
       </v-col>
@@ -50,3 +50,10 @@ export default {
   }
 };
 </script>
+
+<style>
+.shift {
+  left: 50%;
+  transform: translate(-50%);
+}
+</style>
